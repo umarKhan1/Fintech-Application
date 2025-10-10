@@ -47,6 +47,19 @@ class ResponsiveConfig {
   static bool get isTablet => screenWidth >= 600 && screenWidth < 1200;
   static bool get isDesktop => screenWidth >= 1200;
   
+  // Image sizes
+  static double get logoSmall => 100.r;
+  static double get logoMedium => 150.r;
+  static double get logoLarge => 200.r;
+  
+  // Custom responsive image size for specific dimensions
+  static Size responsiveImageSize({
+    required double height,
+    required double width,
+  }) {
+    return Size(width.w, height.h);
+  }
+
   // Responsive values based on device type
   static double responsiveValue({
     required double mobile,

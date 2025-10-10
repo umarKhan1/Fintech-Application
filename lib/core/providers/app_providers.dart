@@ -1,3 +1,5 @@
+import 'package:fintechapp/features/auth/presentation/login_validation_cubit/login_validation_cubit.dart';
+import 'package:fintechapp/features/kyc/presentation/cubit/kyc_cubit.dart';
 import 'package:fintechapp/features/onboarding/cubit/onboarding_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -6,10 +8,13 @@ class AppProviders {
     BlocProvider<OnboardingCubit>(
       create: (context) => OnboardingCubit(),
     ),
+    BlocProvider<LoginValidationCubit>(
+      create: (context) => LoginValidationCubit(),
+    ),
+    BlocProvider<KycCubit>(
+      create: (context) => KycCubit(),
+    ),
     // Add more providers here as needed
-    // BlocProvider<AuthCubit>(
-    //   create: (context) => AuthCubit(),
-    // ),
     // BlocProvider<DashboardCubit>(
     //   create: (context) => DashboardCubit(),
     // ),

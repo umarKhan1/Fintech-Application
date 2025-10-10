@@ -5,15 +5,64 @@ class AppStrings {
   
   // Authentication
   static const String login = 'Login';
+  static const String logIn = 'Log in';
   static const String register = 'Register';
   static const String email = 'Email';
+  static const String emailAddress = 'Email Address';
   static const String password = 'Password';
   static const String confirmPassword = 'Confirm Password';
-  static const String forgotPassword = 'Forgot Password?';
+  static const String forgotPassword = 'Forgot password?';
+  static const String enterYourEmail = 'Enter your email address';
+  static const String enterYourPassword = 'Enter your password';
   static const String dontHaveAccount = "Don't have an account?";
   static const String alreadyHaveAccount = 'Already have an account?';
   static const String signUp = 'Sign Up';
   static const String signIn = 'Sign In';
+  static const String dontHaveBBankAccount = "Don't have a B-Bank account?";
+  // New auth copy
+  static const String accept = 'Accept ';
+  static const String termsOfUse = 'Terms of Use';
+  static const String privacyPolicy = 'Privacy Policy';
+  // OTP
+  static const String verification = 'Verification';
+  static const String codeSentToEmail = 'Code has been sent to your email';
+  static const String resendCode = 'Resend Code';
+  static const String verify = 'Verify';
+  
+  // KYC / Verify Account
+  static const String verifyAccount = 'Verify account';
+  static const String selectCountryOfResidence = 'Select Country of Resident';
+  static const String selectCountry = 'Select country';
+  static const String selectGovernmentDocument = 'Select a valid Government-issued document';
+  static const String identityCard = 'Identity Card';
+  static const String passport = 'Passport';
+  static const String driversLicense = 'Driver\u2019s License';
+  static const String kycInfoNote = 'This information is used for identity verification only, and will be kept secure.';
+  static const String continueLabel = 'Continue';
+  
+  // KYC Upload
+  static const String uploadImageOf = 'Upload Image of ';
+  static const String uploadFrontPage = 'Upload front page';
+  static const String uploadBackPage = 'Upload back page';
+  static const String kycRuleGovernmentIssued = 'Government-issued';
+  static const String kycRuleOriginalFullSize = 'Original full-size, unedited document';
+  static const String kycRuleSingleBackground = 'Place documents against a single-coloured background';
+  static const String kycRuleReadableLitColored = 'Readable, well-lit, coloured images';
+  static const String kycRuleNoBlackWhite = 'No black and white images';
+  static const String kycRuleNoEditedExpired = 'No edited or expired documents';
+  
+  // KYC Selfie
+  static const String takeSelfiePhoto = 'Take Selfie Photo';
+  static const String uploadPortraitPhoto = 'Upload portrait photo';
+  static const String selfieRuleNeutralExpression = 'Take a selfie of yourself with a neutral expression';
+  static const String selfieRuleVisibleFace = 'Make sure your whole face is visible, centred, and your eyes are open';
+  static const String selfieRuleNoCropIdScreenshots = 'Do not crop your ID or screenshots of your ID';
+  static const String selfieRuleNoHideAlterFace = 'Do not hide or alter parts of your face (No hats/ beauty images/ filters/ headgear)';
+  
+  // KYC Verified
+  static const String youAreVerifiedTitle = "You're verified";
+  static const String youAreVerifiedMessage = "You have been verified your information completely. Let's make transactions!";
+  static const String backToHome = 'Back to Home';
   
   // Dashboard
   static const String dashboard = 'Dashboard';

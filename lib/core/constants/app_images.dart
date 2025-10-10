@@ -5,7 +5,8 @@ class AppImages {
   
   // App Icons
   static const String appLogo = 'assets/images/logo.png';
-  
+  static const String darkLogo = 'assets/images/darkbg.png';
+  static const String lightLogo = 'assets/images/whitelogo.png';
   // Card Images
   static const String creditCard = 'assets/images/credit_card.png';
   static const String debitCard = 'assets/images/debit_card.png';

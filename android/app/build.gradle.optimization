@@ -1,0 +1,28 @@
+
+android {
+    buildTypes {
+        release {
+            // Enable code shrinking
+            minifyEnabled true
+            shrinkResources true
+            
+            // Enable R8 obfuscation
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            
+            // Use smaller instruction set
+            ndk {
+                debugSymbolLevel 'NONE'
+            }
+        }
+    }
+    
+    // Target only common architectures
+    splits {
+        abi {
+            enable true
+            reset()
+            include "arm64-v8a", "armeabi-v7a"
+            universalApk true
+        }
+    }
+}

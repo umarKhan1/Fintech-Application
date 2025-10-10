@@ -21,6 +21,9 @@ class AppTheme {
         ),
       ),
       
+      // Icon Theme
+      iconTheme: const IconThemeData(color: Color(0xFF2563EB)),
+      
       // Button Themes
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
@@ -38,28 +41,23 @@ class AppTheme {
           ),
         ),
       ),
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+          foregroundColor: const Color(0xFF2563EB),
+        ),
+      ),
       
       // Input Decoration Theme
-      inputDecorationTheme: InputDecorationTheme(
+      inputDecorationTheme:const  InputDecorationTheme(
         filled: true,
-        fillColor: const Color(0xFFFFFFFF),
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: Color(0xFFE2E8F0)),
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: Color(0xFFE2E8F0)),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: Color(0xFF2563EB), width: 2),
-        ),
-        errorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: Color(0xFFEF4444)),
-        ),
-        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+        fillColor:  Color(0xFFFFFFFF),
+        // Remove default borders so custom fields control borders/colors
+        border: InputBorder.none,
+        enabledBorder: InputBorder.none,
+        focusedBorder: InputBorder.none,
+        errorBorder: InputBorder.none,
+        focusedErrorBorder: InputBorder.none,
+        contentPadding:  EdgeInsets.symmetric(horizontal: 16, vertical: 16),
       ),
       
       // Text Theme
@@ -108,8 +106,8 @@ class AppTheme {
     return ThemeData(
       brightness: Brightness.dark,
       fontFamily: 'Inter',
-      primarySwatch: _createMaterialColor(Colors.red),
-      primaryColor: Colors.red,
+      primarySwatch: _createMaterialColor(const Color.fromARGB(255, 229, 0, 118)),
+      primaryColor: const Color.fromARGB(255, 229, 0, 118),
       scaffoldBackgroundColor: Colors.black,
       
       // AppBar Theme
@@ -135,6 +133,9 @@ class AppTheme {
         ),
       ),
       
+      // Icon Theme
+      iconTheme: const IconThemeData(color:  Color.fromARGB(255, 229, 0, 118)),
+      
       // Button Themes
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
@@ -152,28 +153,23 @@ class AppTheme {
           ),
         ),
       ),
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+          foregroundColor: Colors.red,
+        ),
+      ),
       
       // Input Decoration Theme
-      inputDecorationTheme: InputDecorationTheme(
+      inputDecorationTheme: const InputDecorationTheme(
         filled: true,
-        fillColor: const Color(0xFF1E1E1E),
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: Color(0xFF333333)),
-        ),
-        enabledBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: Color(0xFF333333)),
-        ),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: Colors.red, width: 2),
-        ),
-        errorBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: Colors.redAccent),
-        ),
-        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+        fillColor:Color(0xFF1E1E1E),
+        // Remove default borders so custom fields control borders/colors
+        border: InputBorder.none,
+        enabledBorder: InputBorder.none,
+        focusedBorder: InputBorder.none,
+        errorBorder: InputBorder.none,
+        focusedErrorBorder: InputBorder.none,
+        contentPadding:  EdgeInsets.symmetric(horizontal: 16, vertical: 16),
       ),
       
       // Text Theme

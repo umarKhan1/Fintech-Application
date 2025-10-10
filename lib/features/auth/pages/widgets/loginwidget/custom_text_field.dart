@@ -24,20 +24,18 @@ class CustomTextField extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final colorScheme = theme.colorScheme;
-
+    
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         DecoratedBox(
           decoration: BoxDecoration(
-            color: errorText != null
-                ? colorScheme.error.withValues(alpha: 0.1) // light red when error
-                : (theme.brightness == Brightness.dark
-                    ? AppColors.surfaceDark
-                    : AppColors.surfaceLight),
+            color: theme.brightness == Brightness.dark
+                ? AppColors.surfaceDark
+                : AppColors.surfaceLight,
             borderRadius: BorderRadius.circular(ResponsiveConfig.radiusLarge),
             border: errorText != null
-                ? Border.all(color: colorScheme.error, width: 2)
+                ? Border.all(color: colorScheme.error,)
                 : null,
           ),
           child: TextField(
@@ -45,29 +43,22 @@ class CustomTextField extends StatelessWidget {
             obscureText: obscureText,
             keyboardType: keyboardType,
             textInputAction: textInputAction,
-            cursorColor: errorText != null ? colorScheme.error : theme.primaryColor,
+            cursorColor: errorText != null 
+                ? colorScheme.error 
+                : theme.primaryColor,
             style: TextStyle(
               fontSize: ResponsiveConfig.bodyMedium,
-              color: errorText != null
-                  ? colorScheme.error
-                  : theme.textTheme.bodyMedium?.color,
+             
             ),
             decoration: InputDecoration(
-              // Disable theme fill/borders entirely so only container styling is visible
-              filled: false,
-              border: InputBorder.none,
-              enabledBorder: InputBorder.none,
-              focusedBorder: InputBorder.none,
-              errorBorder: InputBorder.none,
-              focusedErrorBorder: InputBorder.none,
               hintText: hintText,
               hintStyle: TextStyle(
                 fontSize: ResponsiveConfig.bodyMedium,
-                color: errorText != null
-                    ? colorScheme.error.withValues(alpha: 0.7)
-                    : theme.textTheme.bodySmall?.color,
+               
               ),
+            
               suffixIcon: suffixIcon,
+              border: InputBorder.none,
               contentPadding: EdgeInsets.symmetric(
                 horizontal: ResponsiveConfig.paddingMD,
                 vertical: ResponsiveConfig.paddingMD,
