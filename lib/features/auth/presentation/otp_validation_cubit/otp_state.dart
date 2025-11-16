@@ -10,13 +10,6 @@ class OtpState extends Equatable {
     required this.isSuccess,
   });
 
-  final String code;
-  final int totalSeconds;
-  final int secondsRemaining;
-  final bool canResend;
-  final bool isVerifying;
-  final bool isSuccess;
-
   factory OtpState.initial(int seconds) => OtpState(
         code: '',
         totalSeconds: seconds,
@@ -25,6 +18,13 @@ class OtpState extends Equatable {
         isVerifying: false,
         isSuccess: false,
       );
+
+  final String code;
+  final int totalSeconds;
+  final int secondsRemaining;
+  final bool canResend;
+  final bool isVerifying;
+  final bool isSuccess;
 
   OtpState copyWith({
     String? code,

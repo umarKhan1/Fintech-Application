@@ -32,6 +32,7 @@ class SignUpValidationCubit extends Cubit<SignUpValidationState> {
     emit(state.copyWith(isPasswordVisible: !state.isPasswordVisible));
   }
 
+  // ignore: avoid_positional_boolean_parameters
   void toggleAcceptedTerms(bool value) {
     emit(state.copyWith(
       acceptedTerms: value,

@@ -2,7 +2,7 @@ import 'package:fintechapp/core/constants/app_strings.dart';
 import 'package:flutter/material.dart';
 
 class OtpHeaderWidget extends StatelessWidget {
-  const OtpHeaderWidget({super.key, required this.email});
+  const OtpHeaderWidget({required this.email, super.key});
 
   final String email;
 

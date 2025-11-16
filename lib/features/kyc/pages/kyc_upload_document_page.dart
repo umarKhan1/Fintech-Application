@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class KycUploadDocumentPage extends StatelessWidget {
-  const KycUploadDocumentPage({super.key, required this.documentLabel});
+  const KycUploadDocumentPage({required this.documentLabel, super.key});
 
   final String documentLabel; // e.g., Identity Card, Passport
 

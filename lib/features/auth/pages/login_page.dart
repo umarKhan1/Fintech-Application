@@ -2,7 +2,7 @@ import 'package:fintechapp/core/extensions/navigation_extensions.dart';
 import 'package:fintechapp/core/utils/responsive_config.dart';
 import 'package:fintechapp/features/auth/pages/widgets/loginwidget/login_form_widget.dart';
 import 'package:fintechapp/features/auth/pages/widgets/loginwidget/login_header_widget.dart';
-import 'package:fintechapp/features/onboarding/pages/onboarding_page.dart';
+import 'package:fintechapp/features/bottom_navigations/pages/bottom_navigations.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -29,7 +29,7 @@ class LoginView extends StatelessWidget {
               const LoginHeaderWidget(),
               LoginFormWidget(
                 onLoginSuccess: () {
-                  context.pushReplacement(const OnboardingPage());
+                  context.pushReplacement(const BottomNavigation());
                 },
               ),
             ],

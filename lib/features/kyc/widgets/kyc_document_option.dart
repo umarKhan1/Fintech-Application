@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 class KycDocumentOption extends StatelessWidget {
   const KycDocumentOption({
-    super.key,
-    required this.icon,
+      required this.icon,
     required this.label,
     required this.isSelected,
     required this.onTap,
+    super.key,
     this.borderColor,
   });
 

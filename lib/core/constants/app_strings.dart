@@ -33,6 +33,7 @@ class AppStrings {
   static const String verifyAccount = 'Verify account';
   static const String selectCountryOfResidence = 'Select Country of Resident';
   static const String selectCountry = 'Select country';
+  static const String searchCountry = 'Search country';
   static const String selectGovernmentDocument = 'Select a valid Government-issued document';
   static const String identityCard = 'Identity Card';
   static const String passport = 'Passport';
@@ -112,4 +113,71 @@ class AppStrings {
   static const String fieldRequired = 'This field is required';
   static const String invalidEmail = 'Please enter a valid email';
   static const String passwordTooShort = 'Password must be at least 6 characters';
+  // Dashboard (bottom bar)
+  static const home = 'Home';
+  static const search = 'Search';
+  static const inbox = 'Inbox';
+  static const hi = 'Hi';
+    // Dashboard quick actions
+  static const accountAndCard = 'Account and Card';
+  static const transfer = 'Transfer';
+  static const withdraw = 'Withdraw';
+  static const mobilePrepaid = 'Mobile prepaid';
+  static const payTheBill = 'Pay the bill';
+  static const saveOnline = 'Save online';
+  static const creditCard = 'Credit card';
+  static const transactionReport = 'Transaction report';
+  static const beneficiary = 'Beneficiary';
+
+  
+  // Card Detail Screen
+  static const String myCard = 'My Card';
+  static const String availableBalance = 'Available Balance';
+  static const String cardHolder = 'Card Holder';
+  static const String validFrom = 'Valid From';
+  static const String validThru = 'Valid Thru';
+  static const String creditLimit = 'Credit Limit';
+  static const String cardStatus = 'Card Status';
+  static const String active = 'Active';
+  static const String changePin = 'Change Pin';
+  static const String lockCard = 'Lock Card';
+  static const String deactivateCard = 'Deactivate Card';
+  static const String usd = 'USD';
+  static const String cardSettingsSaved = 'Card settings saved successfully';
+  static const String silver = 'Silver';
+
+    // Change PIN Screen
+
+  static const String mobileNumber = 'Mobile Number';
+  static const String mobileNumberDescription =
+      'We need to send OTP to authenticate your number to change your pin';
+  static const String otpVerification = 'OTP Verification';
+  static const String pleaseEnterOtp =
+      'Please enter the OTP send to your mobile number';
+  static const String resendOtp = 'Resend OTP';
+  static const String dontReceiveOtp = "Don't receive OTP?";
+  static const String enterNewPin = 'Enter New Pin';
+  static const String confirmPinCode = 'Confirm Pin Code';
+  static const String yourPinCodesAreSame = 'Your PIN codes are the same';
+  static const String done = 'Done';
+
+
+  static const String account = 'Account';
+
+  static const String chooseTransaction = 'Choose transaction';
+  static const String transferViaCard = 'Transfer via card number';
+  static const String transferToSameBank = 'Transfer to the same bank';
+  static const String transferToAnotherBank = 'Transfer to another bank';
+  static const String chooseBeneficiary = 'Choose beneficiary';
+  static const String findBeneficiary = 'Find beneficiary';
+  static const String name = 'Name';
+  static const String cardNumber = 'Card number';
+  static const String amount = 'Amount';
+  static const String content = 'Content';
+  static const String saveToDirectory = 'Save to directory of beneficiary';
+  static const String confirm = 'Confirm';
+  static const String chooseBank = 'Choose bank';
+  static const String chooseBranch = 'Choose branch';
+      
+
 }

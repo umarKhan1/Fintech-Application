@@ -21,7 +21,7 @@ class KycCountryDropdown extends StatelessWidget {
     final theme = Theme.of(context);
 
     final borderRadius = BorderRadius.circular(20); // Rounded like KYC design
-    final borderColor = theme.dividerColor.withOpacity(0.35); // Subtle outline in both themes
+    final borderColor = theme.dividerColor.withValues(alpha: 0.35); // Subtle outline in both themes
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
